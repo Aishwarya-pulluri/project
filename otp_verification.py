@@ -11,7 +11,7 @@ otp = OTP + " is your OTP"
 msg= otp
 s = smtplib.SMTP('smtp.gmail.com', 587)
 s.starttls()
-s.login("aishwaryapulluri2812@gmail.com", "saguhhgndepgyrij")
+s.login("sender's mail", "app password")#app password is required for server to login into your mail id to send otps for other mail ids
 emailid = input("Enter your email: ")
 s.sendmail('&&&&&&&&&&&',emailid,msg)
 a = input("Enter Your OTP >>: ")
